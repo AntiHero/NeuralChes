@@ -1,9 +1,8 @@
 import os
 import chess.pgn
 
-for fn in os.listdir("data"):
-    print(fn)
-    pgn = open(os.path.join("data", fn))
+for file in os.listdir("data"):
+    pgn = open(os.path.join("data", file))
 
 while 1:
     try:
